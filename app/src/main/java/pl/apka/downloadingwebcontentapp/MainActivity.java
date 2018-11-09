@@ -37,12 +37,14 @@ public class MainActivity extends AppCompatActivity {
                     data = reader.read();
                 }
 
+                return  result;
 
             } catch (Exception e) {
                 e.printStackTrace();
+                return "Failed";
+
             }
 
-            return "Done";
         }
 
     }
